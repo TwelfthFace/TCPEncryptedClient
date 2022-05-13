@@ -1,5 +1,1 @@
-TCPEncryptedClient.pro
-TCPEncryptedClient.pro.user
-
-.qmake.stash
-
+CMakeLists.txt.user
