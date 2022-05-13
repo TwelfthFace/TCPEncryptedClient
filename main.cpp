@@ -21,9 +21,7 @@ void char_to_int(char* in, int& out){
 
 int main(int argc, char** argv)
 {
-    Cipher test;
-
-    RSA* public_key = test.get_public_key();
+    RSA* public_key = cipher::get_public_key();
 
     if(!(argc == 3)){
         cerr << "Usage: TCPEncryptedClient <IP> <PORT>" << endl;
@@ -64,7 +62,7 @@ int main(int argc, char** argv)
 
         getline(cin, user_input);
 
-        const char* em = test.encryptRSA(public_key, user_input);
+        const char* em = cipher::encryptRSA(public_key, user_input);
 
         int send_result = send(sock, em, 256 + 1, 0);
 
