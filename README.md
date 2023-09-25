@@ -1,9 +1,9 @@
 # TCPEncryptedClient
-For usage with the TCPEncryptedServer from *yours truely* available [here](https://github.com/TwelfthFace/TCPEncryptedServer).
+For usage with the TCPEncryptedServer from *yours truly* available [here](https://github.com/TwelfthFace/TCPEncryptedServer).
 
-The private key on the server should have a public key counter part, make sure this client has it or decryption will be impossible.
+The private key on the server should have a public key counterpart, make sure this client has it or decryption will be impossible.
 
-Only one-way communications available atm.
+Only one-way communications are available atm.
 
 #### Usage
 `./TCPEncryptedClient <IP> <PORT>`
